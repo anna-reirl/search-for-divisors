@@ -61,7 +61,7 @@ for i in range(2031, 14312 + 1):
             x //= 11
     if ok:
         print(i)
-=======
+        
 from math import sqrt
 chet = 0
 for i in range(3532000, 3532160+1):
