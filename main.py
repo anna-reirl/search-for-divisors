@@ -59,4 +59,5 @@ for i in range(2031, 14312 + 1):
         else:
             x //= 11
     if ok:
-        print(i)
+        maxch = max(maxch, i)
+print(maxch)
