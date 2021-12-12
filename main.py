@@ -26,11 +26,11 @@
 #     for d in range(2, q + 1):
 #         if i % d == 0:
 #             cnt += 1
-#             if cnt > 0:
-#                 break
-#     if cnt == 0:
-#         chet += 1
-#         print(chet, i)
+    #         if cnt > 0:
+    #             break
+    # if cnt == 0:
+    #     chet += 1
+    #     print(chet, i)
 
 # 3
 # нужно найти кол-во делителей
@@ -48,7 +48,15 @@
 #     if len(set(divs)) == 2:
 #         print(*set(sorted(divs)))
 
-
-
-
-
+# 4
+for i in range(2031, 14312 + 1):
+    x = i
+    ok = True
+    while x > 0:
+        if x % 11 == 2:
+            ok = False
+            break
+        else:
+            x //= 11
+    if ok:
+        print(i)
